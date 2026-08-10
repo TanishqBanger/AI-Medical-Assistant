@@ -10,7 +10,6 @@ def ask_llm(messages):
     response = client.chat.completions.create(
         model=OPENAI_MODEL,
         messages=messages,
-        temperature=0.2,
     )
 
     return response.choices[0].message.content
