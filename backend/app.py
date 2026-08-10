@@ -27,6 +27,8 @@ from logger import logger
 import time as time_module
 from fastapi import Request
 
+from ai.llm import ask_llm
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
@@ -373,6 +375,20 @@ async def log_requests(request: Request, call_next):
     return response 
 
 
+@app.get("/test-llm")
+def test_llm():
+    response = ask_llm([
+        {
+            "role": "user",
+            "content": "Reply with exactly: OpenAI LLM is working!"
+        }
+    ])
+
+    return {
+        "response": response
+    }
+    
+    
 @app.get("/health")
 def health():
     return {
