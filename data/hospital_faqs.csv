@@ -1,1 +1,51 @@
-
+faq_id,question,answer,category
+FAQ001,What are the hospital visiting hours?,General visiting hours are from 4:00 PM to 7:00 PM. Visiting access may be restricted during emergencies or special circumstances.,Visiting
+FAQ002,How can I book an appointment?,"Appointments can be requested through the hospital appointment system, by contacting reception, or through an authorized hospital booking channel.",Appointments
+FAQ003,How can I cancel an appointment?,Patients should cancel appointments through the appointment system or by contacting the hospital reception as early as possible.,Appointments
+FAQ004,How can I reschedule an appointment?,Patients can request a new appointment time through the appointment system or by contacting reception.,Appointments
+FAQ005,What documents are needed for patient registration?,Patients should provide a valid identification document and any relevant medical or referral records available to them.,Registration
+FAQ006,Where is the emergency department?,The emergency department is located at the main hospital entrance and provides emergency services around the clock.,Emergency
+FAQ007,Is the emergency department open 24 hours?,"Yes. Emergency services are intended to operate 24 hours a day, subject to hospital operations.",Emergency
+FAQ008,What should I do in a medical emergency?,Seek immediate assistance from emergency medical staff or the nearest emergency department. Do not delay urgent care while using this information service.,Emergency
+FAQ009,Can I visit a patient in the ICU?,ICU visits are restricted and depend on hospital policy and the patient's condition. Contact the ICU desk for current instructions.,ICU
+FAQ010,How many visitors are allowed per patient?,"Normally, up to two visitors may be permitted at a time, but restrictions can vary by department and patient condition.",Visiting
+FAQ011,Are children allowed in the ICU?,Children may be restricted from ICU areas. Contact the ICU desk for the current visitor policy.,ICU
+FAQ012,Where can I get a copy of my medical records?,Contact the medical records or health information desk and follow the hospital's records-request procedure.,Medical Records
+FAQ013,Can someone else collect my medical records?,A representative may be able to collect records when authorized and when required identification or authorization is provided.,Medical Records
+FAQ014,How do I update my contact information?,Contact patient registration or the hospital reception and provide the updated contact details.,Registration
+FAQ015,What payment methods are accepted?,Payment options depend on hospital facilities and current arrangements. Contact the billing desk for accepted payment methods.,Billing
+FAQ016,How can I get a hospital bill?,Contact the billing department or patient accounts desk to request a copy or explanation of a hospital bill.,Billing
+FAQ017,How do I ask about an insurance claim?,Contact the hospital insurance or billing desk with your policy information and claim documents.,Insurance
+FAQ018,Does the hospital accept health insurance?,"Insurance acceptance depends on the insurer, plan, and hospital arrangements. Confirm coverage with the insurance or billing desk before treatment.",Insurance
+FAQ019,Where is the pharmacy?,The hospital pharmacy location and operating hours are available from reception or the pharmacy desk.,Pharmacy
+FAQ020,Can I bring my own medicines to the hospital?,Tell the treating medical team about all medicines you take. Do not change or stop medicines without appropriate medical guidance.,Medication
+FAQ021,Can I get information about my prescription?,Prescription questions should be directed to the treating clinician or hospital pharmacy.,Medication
+FAQ022,How can I contact a department?,Contact the main reception and request the department's current contact information or extension.,General
+FAQ023,How do I find a doctor?,Use the hospital's doctor directory or contact reception to ask about available specialties and clinicians.,Doctors
+FAQ024,How can I find a specialist?,Contact the hospital or use its department directory to identify the relevant specialty and available appointment options.,Doctors
+FAQ025,What should I bring to an appointment?,"Bring identification, appointment details, relevant medical records, referral documents when applicable, and a list of current medicines.",Appointments
+FAQ026,How early should I arrive for an appointment?,Arrive early enough to complete registration and other required formalities. The exact recommended arrival time may vary by department.,Appointments
+FAQ027,Can I bring a family member to my appointment?,"A support person may be allowed depending on department rules, space, and patient needs.",Visiting
+FAQ028,What are the hospital's privacy rules?,Patient information should be handled according to applicable privacy requirements and hospital procedures.,Privacy
+FAQ029,Can I request an interpreter?,Interpreter or language assistance may be available depending on hospital resources. Contact reception before the appointment when possible.,Accessibility
+FAQ030,Is wheelchair assistance available?,Patients who need mobility assistance should contact reception or security so appropriate assistance can be arranged when available.,Accessibility
+FAQ031,Where can I report a lost item?,Report lost property to hospital reception or the designated security/lost-and-found desk.,General
+FAQ032,Where can I find the billing department?,Ask reception for directions to the billing or patient accounts department.,Billing
+FAQ033,Where can I register as a new patient?,New patients can begin registration at the designated registration or reception desk.,Registration
+FAQ034,Can I update my emergency contact?,Yes. Contact patient registration and provide the updated emergency contact information.,Registration
+FAQ035,What should I do if I miss my appointment?,Contact the hospital as soon as possible to discuss rescheduling and any applicable appointment procedures.,Appointments
+FAQ036,Can I get appointment reminders?,Appointment reminders may be available through the hospital's communication system. Confirm your contact details during registration.,Appointments
+FAQ037,What should I do if I have a question about my treatment?,Ask your treating clinician or authorized care team. This assistant should not replace professional medical advice.,Clinical Information
+FAQ038,Can this assistant diagnose my condition?,No. This assistant provides general information and hospital-related guidance and is not a substitute for diagnosis by a qualified healthcare professional.,Safety
+FAQ039,Can this assistant prescribe medicine?,No. Medication decisions and prescriptions should be made by an appropriately qualified healthcare professional.,Safety
+FAQ040,What should I do if my symptoms become severe?,Seek urgent medical attention or contact emergency services rather than relying on this assistant for an emergency decision.,Emergency
+FAQ041,How do I give feedback about hospital service?,"Contact the hospital's patient relations, feedback, or reception desk using the available feedback procedure.",Feedback
+FAQ042,How do I make a complaint?,Submit a complaint through the hospital's patient relations or grievance process and provide relevant details.,Feedback
+FAQ043,Where can I find patient discharge information?,Contact the treating department or discharge desk for instructions specific to the patient's discharge.,Discharge
+FAQ044,What happens during discharge?,"The care team generally provides discharge instructions, medication information, follow-up guidance, and required documents as applicable.",Discharge
+FAQ045,Can I get a copy of discharge instructions?,Ask the treating department or discharge desk for a copy of the applicable discharge instructions.,Discharge
+FAQ046,Are hospital facilities accessible to people with disabilities?,Accessibility services may be available. Contact reception in advance to request assistance appropriate to your needs.,Accessibility
+FAQ047,Where can I ask about laboratory tests?,"Contact the laboratory or reception for test scheduling, preparation requirements, and report collection information.",Laboratory
+FAQ048,How can I obtain a laboratory report?,Follow the hospital's laboratory report collection or digital-report process and contact the laboratory desk if assistance is needed.,Laboratory
+FAQ049,Where can I ask about imaging tests?,"Contact the imaging or radiology department for scheduling, preparation requirements, and report information.",Radiology
+FAQ050,How can I contact hospital reception?,Use the hospital's official reception contact channel or visit the main reception desk for general assistance.,General

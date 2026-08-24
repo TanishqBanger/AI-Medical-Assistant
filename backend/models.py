@@ -9,8 +9,7 @@ from sqlalchemy import (
     ForeignKey
 )
 
-from database import Base
-
+from backend.database import Base
 
 class Patient(Base):
     __tablename__ = "patients"

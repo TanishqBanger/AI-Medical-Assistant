@@ -1,1 +1,26 @@
-
+policy_id,title,content,category
+P001,General Visiting Hours,"General visiting hours are from 4:00 PM to 7:00 PM. Access may be restricted during emergencies, outbreaks, or other operational circumstances.",Visiting
+P002,Visitor Identification,Visitors may be required to carry or display an authorized visitor pass and comply with identification requirements.,Visiting
+P003,Number of Visitors,"Normally, no more than two visitors should be present with a patient at one time unless the department grants an exception.",Visiting
+P004,ICU Visiting,ICU access is restricted to authorized visitors. Visit duration and visitor numbers may be limited according to clinical and operational requirements.,ICU
+P005,Emergency Department Access,The emergency department operates for urgent care. Visitors and accompanying persons must follow staff instructions and access restrictions.,Emergency
+P006,Patient Registration,"Patients must provide required identification and registration information before receiving routine hospital services, subject to emergency-care exceptions.",Registration
+P007,Appointment Booking,Appointments should be scheduled through approved hospital booking channels. Patients should provide accurate contact and identification information.,Appointments
+P008,Appointment Cancellation,Patients should cancel appointments as early as possible through approved hospital channels so appointment capacity can be managed efficiently.,Appointments
+P009,Appointment Rescheduling,Requests to reschedule appointments should be made through approved booking channels and are subject to available slots.,Appointments
+P010,Late or Missed Appointments,Patients who are late or miss an appointment should contact the relevant department promptly. Rescheduling may depend on availability.,Appointments
+P011,Patient Identification,Patient identity should be verified using the hospital's approved identification process before relevant services are provided.,Safety
+P012,Patient Privacy,"Patient information must be accessed, used, and disclosed only in accordance with applicable privacy requirements and hospital procedures.",Privacy
+P013,Medical Records Access,Requests for medical records must follow the hospital's records-access procedure and may require identity verification or authorization.,Medical Records
+P014,Representative Access to Records,A representative may access records only when appropriate authorization and identification requirements have been satisfied.,Medical Records
+P015,Medication Disclosure,"Patients should provide the care team with an accurate list of medicines, supplements, and relevant allergies. Medication changes require appropriate clinical guidance.",Medication
+P016,Medication Administration,Medicines administered during hospital care must follow authorized clinical orders and hospital medication-safety procedures.,Medication
+P017,Infection Prevention,"Patients, visitors, and staff must follow applicable hand hygiene, protective equipment, isolation, and infection-control instructions.",Infection Control
+P018,Isolation Precautions,Patients placed under isolation precautions and their visitors must follow department instructions regarding protective equipment and movement.,Infection Control
+P019,Smoking and Tobacco,Smoking and tobacco use are prohibited in designated hospital premises according to hospital rules and applicable regulations.,Safety
+P020,Photography and Recording,"Photography, video, or audio recording in clinical areas may be restricted to protect patient privacy and confidentiality.",Privacy
+P021,Billing and Payments,Patients are responsible for following the hospital's billing and payment procedures. Insurance coverage should be verified with the relevant billing or insurance desk.,Billing
+P022,Patient Complaints and Feedback,Patients may submit feedback or complaints through the hospital's designated patient-relations or grievance process.,Feedback
+P023,Discharge Procedure,"Discharge should follow the treating team's instructions. Patients should receive relevant discharge information, medication instructions, and follow-up guidance as applicable.",Discharge
+P024,Accessibility Assistance,Patients who require accessibility or mobility assistance should notify the hospital so reasonable available support can be arranged.,Accessibility
+P025,Emergency Escalation,Urgent or life-threatening situations should be handled through emergency medical services or hospital emergency staff. The AI assistant must not delay emergency care.,Emergency

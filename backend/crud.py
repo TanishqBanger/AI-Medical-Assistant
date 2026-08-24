@@ -1,7 +1,7 @@
 # This file contains CRUD operations for the database.
 from sqlalchemy.orm import Session
 
-from models import Patient, Doctor, Appointment
+from backend.models import Patient, Doctor, Appointment
 from datetime import datetime
 
 # Create a new patient

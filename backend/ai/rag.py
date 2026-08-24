@@ -11,32 +11,26 @@ load_dotenv()
 
 
 class HospitalRAG:
-    """
-    Retrieval-Augmented Generation component for hospital FAQs
-    and hospital policies.
-
-    This class is responsible only for retrieving relevant
-    hospital information from ChromaDB.
-    It does not call the LLM.
-    """
-
+    
     def __init__(
         self,
-        vector_db_path: str = "vector_db",
+        vector_db_path: str = None,
         collection_name: str = "hospital_documents"
     ):
 
-        # -----------------------------------------------------
-        # OpenAI client
-        # -----------------------------------------------------
+        if vector_db_path is None:
+            vector_db_path = os.path.abspath(
+                os.path.join(
+                    os.path.dirname(__file__),
+                    "..",
+                    "..",
+                    "vector_db"
+                )
+            )
 
         self.openai_client = OpenAI(
             api_key=os.getenv("OPENAI_API_KEY")
         )
-
-        # -----------------------------------------------------
-        # ChromaDB client
-        # -----------------------------------------------------
 
         self.chroma_client = chromadb.PersistentClient(
             path=vector_db_path
