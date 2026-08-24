@@ -1,15 +1,16 @@
 # OpenAI gateway
 from openai import OpenAI
-from config import OPENAI_API_KEY, OPENAI_MODEL
-
+from backend.config import OPENAI_API_KEY, OPENAI_MODEL
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 
-def ask_llm(messages):
+def ask_llm(messages, tools=None):
     response = client.chat.completions.create(
         model=OPENAI_MODEL,
         messages=messages,
+        tools=tools,
+        reasoning_effort="none",
     )
 
-    return response.choices[0].message.content
+    return response.choices[0].message

@@ -1,40 +1,46 @@
 from fastapi import FastAPI
-
-from schemas import PatientData
-from prediction import predict_department
-
-from database import engine
-from models import Base
-
-from fastapi import Depends
+from backend.schemas import PatientData
+from backend.prediction import predict_department
+from backend.database import engine, get_db
+from backend.models import Base, Doctor, Appointment, Patient
+import backend.crud as crud
+import backend.schemas as schemas
+from backend.config import HOSPITAL_OPEN_TIME, HOSPITAL_CLOSE_TIME
+from backend.logger import logger
+from backend.ai.llm import ask_llm
+from backend.ai.orchestrator import handle_message
+from pydantic import BaseModel
+from fastapi import FastAPI, Depends, HTTPException, Request
 from sqlalchemy.orm import Session
-
-from database import get_db
-from models import Doctor
-
-import crud
-import schemas
-
 from datetime import datetime, date, time
-from models import Appointment
-
-from models import Patient
-from fastapi import HTTPException
-
-from config import HOSPITAL_OPEN_TIME, HOSPITAL_CLOSE_TIME
-from logger import logger
-
 import time as time_module
-from fastapi import Request
 
-from ai.llm import ask_llm
-
-Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI Medical Department Prediction API",
     version="1.0.0"
 )
+
+Base.metadata.create_all(bind=engine)
+
+
+
+class ChatRequest(BaseModel):
+    message: str
+
+
+class ChatResponse(BaseModel):
+    response: str
+
+
+@app.post("/chat", response_model=ChatResponse)
+def chat_endpoint(request: ChatRequest):
+    response = handle_message(request.message)
+
+    return ChatResponse(
+        response=response
+    )
+    
 
 
 @app.get("/")
