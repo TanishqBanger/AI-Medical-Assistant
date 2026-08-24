@@ -7,7 +7,16 @@ from openai import OpenAI
 
 
 # Load environment variables
-load_dotenv()
+BASE_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        ".."
+    )
+)
+
+load_dotenv(
+    os.path.join(BASE_DIR, ".env")
+)
 
 
 class HospitalRAG:

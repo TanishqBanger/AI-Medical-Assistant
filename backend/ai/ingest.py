@@ -7,6 +7,15 @@ from openai import OpenAI
 # Load environment variables
 load_dotenv()
 
+# Project root
+BASE_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        ".."
+    )
+)
+
 # OpenAI client
 openai_client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
@@ -14,7 +23,7 @@ openai_client = OpenAI(
 
 # ChromaDB client
 chroma_client = chromadb.PersistentClient(
-    path="vector_db"
+    path=os.path.join(BASE_DIR, "vector_db")
 )
 
 # Create collection
@@ -23,11 +32,17 @@ collection = chroma_client.get_or_create_collection(
 )
 
 # Load CSV files
-faq_df = pd.read_csv("data/hospital_faqs.csv")
-policy_df = pd.read_csv("data/hospital_policies.csv")
+faq_df = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "hospital_faqs.csv")
+)
+
+policy_df = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "hospital_policies.csv")
+)
 
 print("FAQs loaded:", len(faq_df))
 print("Policies loaded:", len(policy_df))
+
 
 
 def create_embedding(text):
