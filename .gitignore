@@ -30,3 +30,8 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# ChromaDB backups
+vector_db_backup/
+
+
